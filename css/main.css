@@ -1,0 +1,147 @@
+/*@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);*/
+
+body {
+    font-family: /*'Source Sans Pro', */sans-serif;
+    background-color: white;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    margin: 0;
+    padding: 20px 85px 20px 85px;
+}
+
+.navigation > a {
+    float: left;
+}
+
+.navigation ul {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.navigation ul > li {
+    float: right;
+    margin-right: 20px;
+}
+
+.navigation ul > li.soc {
+    margin-right: 10px;
+}
+
+.navigation ul > li.soc img {
+    height:20px;
+}
+
+.navigation ul > li.navbtn > a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #3d3d3d;
+    box-shadow: 0 0 20px -3px #3d3d3d;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.navigation ul > li.navbtn > a:hover,
+.navigation ul > li.navbtn > a:focus,
+.navigation ul > li.navbtn.active > a {
+    color: #3d3d3d;
+    background-color: white;
+    text-decoration: none;
+}
+
+.logo {
+    box-shadow: 0 0 20px -3px #3d3d3d;
+}
+
+/*.logo { logo-orig.png
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid #3d3d3d;
+    margin: 0 auto 0 auto;
+    padding: 8px 0;
+    box-shadow: 0 0 20px -3px #3d3d3d;
+}*/
+
+header {
+    /*background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/s720x720/11044565_736312739816381_1436489791630981220_o.jpg)
+    no-repeat center center fixed;
+    background-size: cover;*/
+    height: 84vh;
+    position: relative;
+    box-shadow: 0 6px 20px -6px black;
+}
+
+#title {
+    position: absolute;
+    top: 35vh;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    color: white;
+    text-align: center;
+}
+
+#title h1 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    text-shadow: 8px 8px 10px black;
+}
+
+.description {
+    font-size: large;
+    text-align: justify;
+}
+
+.carousel-control {
+    opacity: .8;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    font-size: 2.5vw;
+}
+
+footer {
+    padding: 15px;
+    text-align: right;
+    font-size: small;
+}
+
+.spinner {
+    margin-top: 60px;
+}
+
+.kenburns {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.kenburns img {
+    width: calc(100% + 60px);
+    animation: kenburns-animation 12s;
+}
+
+@keyframes kenburns-animation {
+    from {
+        transform: translate3d(-30px,0,0) scale(1.2);
+    }
+    to {
+        transform: translate3d(0,0,0) scale(1);
+    }
+}

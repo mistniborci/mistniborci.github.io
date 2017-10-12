@@ -1,0 +1,43 @@
+<header ng-style="background">
+
+    <a href="" class="carousel-control left" role="button" ng-click="prev($event)" ng-show="!first">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a href="" class="carousel-control right" role="button" ng-click="next($event)" ng-show="!last">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    <div id="title">
+        <h1>{{event.name}}</h1>
+    </div>
+
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 description">
+
+            <br/><br/>
+
+            Akce: <a href="https://facebook.com/{{event.id}}" target="_blank">https://facebook.com/{{event.id}}</a>
+
+            <br/><br/>
+
+            {{event.start_time | date:'medium'}} @ <a href="http://maps.google.com/?q={{location}}" target="_blank">{{event.location}}</a>
+
+            <br/><br/>
+
+            <p ng-bind-html="event.description"></p>
+
+            <br/>
+
+            <a href="http://maps.google.com/?q={{location}}" target="_blank" ng-if="googleMap">
+                <img ng-src="{{googleMap}}" class="img-responsive img-rounded center-block"/>
+            </a>
+
+        </div>
+    </div>
+</div>
