@@ -32,7 +32,7 @@ angular
                 templateUrl: 'views/data.html'
             })
             .otherwise({
-                redirectTo: '/akce'
+                redirectTo: '/onas'
             });
     })
     .constant('constants', {
